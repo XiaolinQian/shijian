@@ -1,0 +1,48 @@
+{
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": []
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "broken": []
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "broken": []
+    },
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "broken": []
+    }
+  ],
+  "downloads": [
+    {
+      "name": "TodoApp_0.1.0_x64.dmg",
+      "bytes": 6081428,
+      "sha256": "8ce9f4292ceb43aeaac67946459da3f57d71a944074b2a488c9ea70b104e9570"
+    },
+    {
+      "name": "TodoApp-press-kit.zip",
+      "bytes": 556325,
+      "sha256": "24f3c50af1501a00e9b7f0ccb925abb4d3421353eaae6ed73beb4b6102c3e09d"
+    },
+    {
+      "name": "01-cover.png",
+      "bytes": 208334,
+      "sha256": "b9962a69dac5dd1d461db72fd24b8752d6f8ccaae35db61313247aac11bb5d6f"
+    }
+  ],
+  "filePreview": true,
+  "status": "passed"
+}
