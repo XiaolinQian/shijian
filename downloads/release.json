@@ -1,0 +1,22 @@
+{
+  "productName": "时笺",
+  "version": "0.1.0",
+  "architecture": "x86_64",
+  "minimumMacOS": "13.0",
+  "bundleIdentifier": "com.todoapp.desktop",
+  "file": "Shijian_0.1.0_x64.dmg",
+  "compatibilityFile": "TodoApp_0.1.0_x64.dmg",
+  "bytes": 6195707,
+  "sha256": "c8e5c92171b705d864501eb151e9ea8aea5941e0cb23ca0d3906404bf2bb51b4",
+  "publishedAt": "2026-10-16T01:56:49.539457+00:00",
+  "developerSigned": false,
+  "notarized": false,
+  "validation": {
+    "hdiutilVerify": "VALID",
+    "mountedApp": "时笺.app",
+    "mountedBundleMatchesBuild": true,
+    "iconMatchesSource": true,
+    "applicationsShortcut": true,
+    "fileCount": 3
+  }
+}

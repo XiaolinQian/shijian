@@ -28,14 +28,14 @@
   ],
   "downloads": [
     {
-      "name": "TodoApp_0.1.0_x64.dmg",
-      "bytes": 6081428,
-      "sha256": "8ce9f4292ceb43aeaac67946459da3f57d71a944074b2a488c9ea70b104e9570"
+      "name": "Shijian_0.1.0_x64.dmg",
+      "bytes": 6195707,
+      "sha256": "c8e5c92171b705d864501eb151e9ea8aea5941e0cb23ca0d3906404bf2bb51b4"
     },
     {
       "name": "TodoApp-press-kit.zip",
-      "bytes": 556325,
-      "sha256": "24f3c50af1501a00e9b7f0ccb925abb4d3421353eaae6ed73beb4b6102c3e09d"
+      "bytes": 556129,
+      "sha256": "0d30c440cf514c284b9ae6df06e241eabccfbd0caa93d5c6a7d8e7a8d92b9d1b"
     },
     {
       "name": "01-cover.png",
@@ -44,5 +44,10 @@
     }
   ],
   "filePreview": true,
+  "release": {
+    "file": "Shijian_0.1.0_x64.dmg",
+    "compatibilityFile": "TodoApp_0.1.0_x64.dmg",
+    "sha256": "c8e5c92171b705d864501eb151e9ea8aea5941e0cb23ca0d3906404bf2bb51b4"
+  },
   "status": "passed"
 }

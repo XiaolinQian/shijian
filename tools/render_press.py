@@ -148,7 +148,7 @@ txt(im,357,1100,'时笺 · SHIJIAN',43,INK,True)
 txt(im,246,1190,'桌面待办 / 每日提醒 / 自动报告',28,MUTED)
 rr(im,(140,1340,900,1456),GREEN,18)
 txt(im,255,1370,'下载 macOS 体验版',39,WHITE,True)
-txt(im,143,1493,'旧名日序 v0.1.0 · Intel x64 · macOS 13+',25,GREEN)
+txt(im,143,1493,'时笺 v0.1.0 · Intel x64 · macOS 13+',25,GREEN)
 txt(im,143,1540,'体验包未签名、公证 · Windows 版待发布',22,MUTED)
 save(im,'04-download')
 

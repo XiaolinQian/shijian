@@ -13,7 +13,7 @@ python3 -m http.server 4173 --bind 127.0.0.1
 
 打开 http://127.0.0.1:4173/ 。下载区包含真实 DMG、SHA-256 校验文件和宣传素材 ZIP。
 
-- macOS：v0.1.0，Intel x64，macOS 13+；6,081,428 字节（5.80 MiB）。当前未签名、公证，Apple Silicon 原生包未提供。
+- macOS：v0.1.0，Intel x64，macOS 13+；6,195,707 字节（5.91 MiB）。当前未签名、公证，Apple Silicon 原生包未提供。
 - Windows：未提供安装包，按钮禁用，不会跳转到无效链接。
 - 功能介绍按现有实现撰写：本地汇总、报告补充 / 导出；没有宣称 AI 润色或云同步已上线。
 
@@ -65,4 +65,4 @@ downloads/
 
 ## 名称与图标更新
 
-当前宣传品牌为「时笺 · SHIJIAN」。历史应用截图和下载包仍是旧名称「日序」v0.1.0，页面已标明。新名称和图标已接入应用源码；安装包将在重新构建后更新。品牌源文件见 `../brand/shijian/`。
+当前宣传品牌为「时笺 · SHIJIAN」。macOS 安装包已重新构建为新名称和新图标，主下载文件为 `downloads/Shijian_0.1.0_x64.dmg`，旧路径 `downloads/TodoApp_0.1.0_x64.dmg` 同步更新为相同字节内容。`SHA256SUMS.txt` 包含两个文件名的校验值，`release.json` 记录大小、哈希与镜像内容验证。历史应用截图仍标注旧名称「日序」。品牌源文件见 `../brand/shijian/`。

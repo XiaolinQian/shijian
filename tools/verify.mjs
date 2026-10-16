@@ -68,6 +68,26 @@ try {
   page.on('requestfailed', (r) => failures.push(`${r.failure()?.errorText} ${r.url()}`));
   await page.goto(base, { waitUntil: 'networkidle' });
   assert.equal(await page.title(), '时笺 · SHIJIAN｜今天，也要从容有序。');
+  // Pin download checks to the verified build manifest, including the old link alias.
+  const release = JSON.parse(await readFile(path.join(root, 'downloads/release.json'), 'utf8'));
+  assert.equal(release.productName, '时笺');
+  const expectedChecksum = release.sha256;
+  for (const filename of [release.file, release.compatibilityFile]) {
+    const response = await page.request.get(`${base}/downloads/${filename}`);
+    assert.equal(response.status(), 200);
+    const bytes = await response.body();
+    assert.equal(bytes.length, release.bytes);
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), expectedChecksum);
+  }
+  const checksumFile = await readFile(path.join(root, 'downloads/SHA256SUMS.txt'), 'utf8');
+  assert.ok(checksumFile.includes(`${expectedChecksum}  ${release.file}`));
+  assert.ok(checksumFile.includes(`${expectedChecksum}  ${release.compatibilityFile}`));
+  summary.release = {
+    file: release.file,
+    compatibilityFile: release.compatibilityFile,
+    sha256: expectedChecksum,
+  };
+
   const urls = await page
     .locator('a[href],img[src],link[href]')
     .evaluateAll((els) => [
@@ -143,7 +163,7 @@ try {
   assert.equal(await question.evaluate((el) => el.parentElement.open), false);
   assert.equal(await page.getByRole('button', { name: 'Windows 版尚未发布' }).isDisabled(), true);
   for (const href of [
-    'downloads/TodoApp_0.1.0_x64.dmg',
+    'downloads/Shijian_0.1.0_x64.dmg',
     'downloads/TodoApp-press-kit.zip',
     'press/01-cover.png',
   ]) {
